@@ -1,0 +1,23 @@
+<html>
+    <body style="text-align:center" onload="onload()" id="body"> <!--ignore the id for body-->
+        <input type="text" id="redi" name="red"> <!--i for input-->
+        <input type="text" id="greeni" name="green">
+        <input type="text" id="bluei" name="blue"><br><br>
+        <input type="button" value="answer" onclick="testelcoloro()">
+        <p style="float:center" id="answer" style="background:black;color:white;width:110"></p><br>
+        <script>
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            function testelcoloro(){
+                document.getElementById("answer").innerHTML = "(" + r + ", " + g + ", " + b + ")";
+            }
+            function onload(){
+                document.getElementById("body").style.backgroundColor = (r , g , b);
+            }
+        </script>
+        <style>
+            input {text-align:center}
+        </style>
+    </body>
+</html>
