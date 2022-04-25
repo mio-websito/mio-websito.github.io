@@ -4,7 +4,10 @@
         <input type="text" id="greeni" name="green">
         <input type="text" id="bluei" name="blue"><br><br>
         <input type="button" value="answer" onclick="testelcoloro()">
-        <p style="float:center" id="answer" style="background:black;color:white;width:110"></p><br>
+        <div style="position:absolute;left:50%;transform: translate(-50%);">
+            <p  id="answer" style="background:black;color:white;width:110;"></p>
+        </div>    
+        <br>
         <script>
             let r = Math.floor(Math.random() * 256);
             let g = Math.floor(Math.random() * 256);
